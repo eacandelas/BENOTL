@@ -1,12 +1,12 @@
 # The Badge of the Lands
 Badge Electronico No Oficial para Talent Land México 2018.
 
-![Chica](https://raw.githubusercontent.com/greenoneo0/BENOTL/master/BENOTL-Diseno/SVG_PCB/Chica/Chica.jpeg)
+![Chica](https://raw.githubusercontent.com/greenoneo0/BENOTL/master/BENOTL-Diseno/SVG_PCB/Chica/Chica.png)
 
 
-![Tesla](https://raw.githubusercontent.com/greenoneo0/BENOTL/master/BENOTL-Diseno/SVG_PCB/Robot/Robot.jpeg)
+![Tesla](https://raw.githubusercontent.com/greenoneo0/BENOTL/master/BENOTL-Diseno/SVG_PCB/Robot/Robot.png)
 
-![Robot](https://raw.githubusercontent.com/greenoneo0/BENOTL/master/BENOTL-Diseno/SVG_PCB/Tesla/Tesla.jpeg)
+![Robot](https://raw.githubusercontent.com/greenoneo0/BENOTL/master/BENOTL-Diseno/SVG_PCB/Tesla/Tesla.png)
 
 
 ## Caracteristicas
