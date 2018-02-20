@@ -1,16 +1,24 @@
-# The badge of the Lands
+# The Badge of the Lands
 Badge Electronico No Oficial para Talent Land México 2018.
 
-##Caracteristicas
+![Chica](https://raw.githubusercontent.com/greenoneo0/BENOTL/master/BENOTL-Diseno/SVG_PCB/Chica/Chica.jpeg)
+
+
+![Tesla](https://raw.githubusercontent.com/greenoneo0/BENOTL/master/BENOTL-Diseno/SVG_PCB/Robot/Robot.jpeg)
+
+![Robot](https://raw.githubusercontent.com/greenoneo0/BENOTL/master/BENOTL-Diseno/SVG_PCB/Tesla/Tesla.jpeg)
+
+
+## Caracteristicas
 
 - Basado en el modulo WIFi ESP8266
 - 12 Leds WS2812B
 - Pantalla OLED 128x64
 
-##Agradecemos a nuestros patrocinadores
+## Agradecemos a nuestros patrocinadores
 - Proximanente
  
-##Autores
+## Autores
 By:
 
 @gsreynaga      - Layout y routing.
@@ -23,7 +31,7 @@ By:
 
 @sabasacustico  - PM y logistica.
  
-##Licencia
+## Licencia
 Firmware bajo una licencia MIT. ver el archivo LICENSE para mas información.
 
 Hardware lanzado bajo una licencia CERN Open Hardware Licence v1.2. Ver el archivo LICENSE_HARDWARE para mas información.
