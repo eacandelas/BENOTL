@@ -4,3 +4,9 @@
 *.bak
 
 *.kicad_pcb-bak
+
+*.csv
+
+*.net
+
+*.xml
