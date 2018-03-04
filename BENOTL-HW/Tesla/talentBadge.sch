@@ -112,7 +112,7 @@ U 1 1 5A823B5C
 P 9000 2350
 F 0 "U1" H 8500 3350 60  0000 C CNN
 F 1 "esp8266-12" H 8250 2300 60  0000 C CNN
-F 2 "talentBadge:ESP-12E_SMD" H 8450 2500 60  0001 C CNN
+F 2 "talentBadge:esp8266-12" H 8450 2500 60  0001 C CNN
 F 3 "" H 8450 2500 60  0000 C CNN
 	1    9000 2350
 	1    0    0    -1  
@@ -912,13 +912,7 @@ Wire Wire Line
 	7800 5350 7400 5350
 Connection ~ 7400 5350
 Wire Wire Line
-	9100 5750 9100 4900
-Connection ~ 9100 4900
-Wire Wire Line
 	9100 5850 9200 5850
-Wire Wire Line
-	9200 5850 9200 5000
-Connection ~ 9200 5000
 Wire Wire Line
 	3000 7350 2900 7350
 Connection ~ 2900 7350
@@ -1706,4 +1700,12 @@ NoConn ~ 8300 5850
 NoConn ~ 5150 2800
 NoConn ~ 10920 7360
 NoConn ~ 2050 6930
+Wire Wire Line
+	9200 5850 9200 4900
+Connection ~ 9200 4900
+Wire Wire Line
+	9130 5000 9130 5750
+Wire Wire Line
+	9130 5750 9100 5750
+Connection ~ 9130 5000
 $EndSCHEMATC
