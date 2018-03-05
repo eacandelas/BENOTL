@@ -38,11 +38,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Talent Badge"
+Date "04/03/2018"
+Rev "0.3"
+Comp "Makers Mexico"
+Comment1 "Eduardo Contreras"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -200,7 +200,7 @@ U 1 1 5A883E94
 P 1150 6600
 F 0 "C3" H 1160 6670 50  0000 L CNN
 F 1 "4.7uF" H 1160 6520 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1150 6600 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:Tantalum_Case-A_EIA-3216-18_Hand" H 1150 6600 50  0001 C CNN
 F 3 "https://www.mouser.com/ds/2/40/TPS_AUTO-845414.pdf" H 1150 6600 50  0001 C CNN
 F 4 "TPSA475K010T1400" H 1150 6600 60  0001 C CNN "PartNo"
 	1    1150 6600
@@ -344,7 +344,7 @@ U 1 1 5A89C377
 P 1250 4100
 F 0 "C5" H 1260 4170 50  0000 L CNN
 F 1 "4.7uF" H 1260 4020 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1250 4100 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:Tantalum_Case-A_EIA-3216-18_Hand" H 1250 4100 50  0001 C CNN
 F 3 "https://www.mouser.com/ds/2/40/TPS_AUTO-845414.pdf" H 1250 4100 50  0001 C CNN
 F 4 "TPSA475K010T1400 " H 1250 4100 60  0001 C CNN "PartNo"
 	1    1250 4100
@@ -391,10 +391,6 @@ F 3 "" H 3050 5200 50  0000 C CNN
 	1    3050 5200
 	1    0    0    -1  
 $EndComp
-Text Notes 7150 6900 0    100  Italic 20
-TBadge
-Text Notes 8140 7640 0    50   Italic 10
-Feb 16, 2018\n
 Text GLabel 8750 2700 3    50   Input ~ 0
 CS
 Text GLabel 9150 2700 3    50   Input ~ 0
@@ -816,7 +812,7 @@ U 1 1 5A9257A3
 P 5600 2900
 F 0 "U16" H 5400 3250 60  0000 C CNN
 F 1 "ws2812b" H 5550 2850 60  0000 C CNN
-F 2 "LEDs:LED_WS2812B-PLCC4" H 5600 2850 60  0001 C CNN
+F 2 "talentBadge:LED_WS2812B-cortado" H 5600 2850 60  0001 C CNN
 F 3 "http://www.seeedstudio.com/document/pdf/WS2812B%20Datasheet.pdf" H 5600 2850 60  0001 C CNN
 F 4 "ws2812b" H 5600 2900 60  0001 C CNN "PartNo"
 	1    5600 2900
@@ -1130,7 +1126,7 @@ U 1 1 5A93D3CC
 P 2250 6600
 F 0 "C4" H 2260 6670 50  0000 L CNN
 F 1 "4.7uF" H 2260 6520 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2250 6600 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:Tantalum_Case-A_EIA-3216-18_Hand" H 2250 6600 50  0001 C CNN
 F 3 "https://www.mouser.com/ds/2/40/TPS_AUTO-845414.pdf" H 2250 6600 50  0001 C CNN
 F 4 "TPSA475K010T1400" H 2250 6600 60  0001 C CNN "PartNo"
 	1    2250 6600
