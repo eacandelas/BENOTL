@@ -2,8 +2,8 @@
 
   (general
     (links 154)
-    (no_connects 44)
-    (area 0 0 0 0)
+    (no_connects 0)
+    (area 49.260511 22.24 175.040001 136.406725)
     (thickness 1.6)
     (drawings 5)
     (tracks 806)
@@ -73,8 +73,8 @@
     (grid_origin 345.24 214.74)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
-      (usegerberextensions false)
+      (layerselection 0x010ff_80000001)
+      (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -96,7 +96,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory Tesla_gerbers/))
   )
 
   (net 0 "")
@@ -3077,6 +3077,7 @@
 
   (segment (start 159.516702 74.157028) (end 161.943756 74.157028) (width 0.4) (layer B.Cu) (net 0))
   (segment (start 161.943756 74.157028) (end 162.101871 73.998913) (width 0.4) (layer B.Cu) (net 0))
+  (segment (start 109.69 51.05) (end 109.69 50.19) (width 0.4) (layer F.Cu) (net 0))
   (segment (start 116.04 47.485) (end 116.04 50.39) (width 1) (layer B.Cu) (net 1))
   (segment (start 105.582651 65.74) (end 105.582651 65.557349) (width 1) (layer F.Cu) (net 1))
   (segment (start 105.582651 65.557349) (end 106.64 64.5) (width 1) (layer F.Cu) (net 1))
@@ -3321,7 +3322,6 @@
   (segment (start 112.95 47.25) (end 104.08 47.25) (width 0.4) (layer B.Cu) (net 2))
   (segment (start 104.08 47.25) (end 103.4 47.93) (width 0.4) (layer B.Cu) (net 2))
   (via (at 103.4 47.93) (size 0.8) (drill 0.6) (layers F.Cu B.Cu) (net 2))
-  (segment (start 109.69 51.05) (end 109.69 50.19) (width 0.4) (layer F.Cu) (net 2))
   (segment (start 112.04 50.39) (end 110.35 50.39) (width 0.4) (layer B.Cu) (net 2))
   (segment (start 110.35 50.39) (end 109.69 51.05) (width 0.4) (layer B.Cu) (net 2))
   (segment (start 73.698882 66.031118) (end 74.14 65.59) (width 0.4) (layer F.Cu) (net 2))
