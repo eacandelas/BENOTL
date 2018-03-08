@@ -1,4 +1,4 @@
-update=Friday, 16 February 2018 'pmt' 22:56:29
+update=miércoles, 07 '07e' marzo '07e' 2018, 19:02:19
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,4 @@ LibName31=atmel
 LibName32=contrib
 LibName33=valves
 LibName34=pdxlbs
+LibName35=/Users/sabas/Documents/Kicad Librerias/kicad-ESP8266/ESP8266
