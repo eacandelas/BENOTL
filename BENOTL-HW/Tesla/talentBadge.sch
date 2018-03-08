@@ -41,7 +41,7 @@ encoding utf-8
 Sheet 1 1
 Title "The badge of the Lands"
 Date "2018-03-07"
-Rev "0.3"
+Rev "0.4"
 Comp "Unofficial Badge of Talent Land 2018"
 Comment1 "Andres Sabas"
 Comment2 "Eden Candelas"
@@ -295,83 +295,6 @@ B1
 Text GLabel 10485 2535 2    50   Input ~ 0
 B2
 $Comp
-L sd_card_spi P5
-U 1 1 5A89AD86
-P 3550 5150
-F 0 "P5" H 3400 6200 60  0000 C CNN
-F 1 "sd_card_spi" H 3500 5050 60  0000 C CNN
-F 2 "talentBadge:MOLEX_0475710001" H 3550 5150 60  0001 C CNN
-F 3 "https://www.molex.com/pdm_docs/sd/475710001_sd.pdf" H 3550 5150 60  0001 C CNN
-F 4 "47571-0001 " H 3550 5150 60  0001 C CNN "PartNo"
-	1    3550 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R13
-U 1 1 5A89C226
-P 2050 4100
-F 0 "R13" V 1980 4020 50  0000 L CNN
-F 1 "10k" V 2050 4030 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 2050 4100 50  0001 C CNN
-F 3 "https://www.mouser.com/ds/2/447/Yageo_08112016_RC0805-1211991.pdf" H 2050 4100 50  0001 C CNN
-F 4 "RC0805FR-0710KL" H 2050 4100 60  0001 C CNN "PartNo"
-	1    2050 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C5
-U 1 1 5A89C377
-P 1250 4100
-F 0 "C5" H 1260 4170 50  0000 L CNN
-F 1 "4.7uF" H 1260 4020 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1250 4100 50  0001 C CNN
-F 3 "https://www.mouser.com/ds/2/40/TPS_AUTO-845414.pdf" H 1250 4100 50  0001 C CNN
-F 4 "TPSA475K010T1400 " H 1250 4100 60  0001 C CNN "PartNo"
-	1    1250 4100
-	1    0    0    -1  
-$EndComp
-Text GLabel 1100 4500 0    50   Input ~ 0
-CS
-Text GLabel 1100 4600 0    50   Input ~ 0
-MOSI
-Text GLabel 1100 4800 0    50   Input ~ 0
-CLK
-Text GLabel 1100 5000 0    50   Output ~ 0
-MISO
-$Comp
-L GND #PWR011
-U 1 1 5A89D556
-P 1400 4300
-F 0 "#PWR011" H 1400 4050 50  0001 C CNN
-F 1 "GND" H 1400 4150 50  0000 C CNN
-F 2 "" H 1400 4300 50  0000 C CNN
-F 3 "" H 1400 4300 50  0000 C CNN
-	1    1400 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR012
-U 1 1 5A89DD80
-P 1900 3850
-F 0 "#PWR012" H 1900 3700 50  0001 C CNN
-F 1 "+3.3V" H 1900 3990 50  0000 C CNN
-F 2 "" H 1900 3850 50  0000 C CNN
-F 3 "" H 1900 3850 50  0000 C CNN
-	1    1900 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR013
-U 1 1 5A8A120C
-P 3050 5200
-F 0 "#PWR013" H 3050 4950 50  0001 C CNN
-F 1 "GND" H 3050 5050 50  0000 C CNN
-F 2 "" H 3050 5200 50  0000 C CNN
-F 3 "" H 3050 5200 50  0000 C CNN
-	1    3050 5200
-	1    0    0    -1  
-$EndComp
-$Comp
 L +3.3V #PWR014
 U 1 1 5A8ACE92
 P 8750 4150
@@ -516,8 +439,6 @@ F 4 "0440.500WRA" H 8000 4800 60  0001 C CNN "PartNo"
 $EndComp
 Text Notes 4300 3700 0    50   ~ 0
 Pantalla OLED
-Text Notes 600  3700 0    50   ~ 0
-Tarjeta SD.
 Text Notes 650  5800 0    50   ~ 0
 PS
 Text Notes 2850 5800 0    50   ~ 0
@@ -885,54 +806,6 @@ F 4 "885012207045 " H 4750 2850 60  0001 C CNN "PartNo"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C6
-U 1 1 5A9285D5
-P 1550 4100
-F 0 "C6" H 1560 4170 50  0000 L CNN
-F 1 "0.1uF" H 1560 4020 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1550 4100 50  0001 C CNN
-F 3 "https://www.mouser.com/ds/2/445/885012207045-554527.pdf" H 1550 4100 50  0001 C CNN
-F 4 "885012207045 " H 1550 4100 60  0001 C CNN "PartNo"
-	1    1550 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R12
-U 1 1 5A92A801
-P 2200 4100
-F 0 "R12" V 2130 4030 50  0000 L CNN
-F 1 "10k" V 2200 4030 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 2200 4100 50  0001 C CNN
-F 3 "https://www.mouser.com/ds/2/447/Yageo_08112016_RC0805-1211991.pdf" H 2200 4100 50  0001 C CNN
-F 4 "RC0805FR-0710KL" H 2200 4100 60  0001 C CNN "PartNo"
-	1    2200 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R11
-U 1 1 5A92A8CD
-P 2350 4100
-F 0 "R11" V 2280 4040 50  0000 L CNN
-F 1 "10k" V 2350 4030 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 2350 4100 50  0001 C CNN
-F 3 "https://www.mouser.com/ds/2/447/Yageo_08112016_RC0805-1211991.pdf" H 2350 4100 50  0001 C CNN
-F 4 "RC0805FR-0710KL" H 2350 4100 60  0001 C CNN "PartNo"
-	1    2350 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R10
-U 1 1 5A92A998
-P 2500 4100
-F 0 "R10" V 2430 4030 50  0000 L CNN
-F 1 "10k" V 2500 4030 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 2500 4100 50  0001 C CNN
-F 3 "https://www.mouser.com/ds/2/447/Yageo_08112016_RC0805-1211991.pdf" H 2500 4100 50  0001 C CNN
-F 4 "RC0805FR-0710KL" H 2500 4100 60  0001 C CNN "PartNo"
-	1    2500 4100
-	1    0    0    -1  
-$EndComp
-$Comp
 L R_Small R14
 U 1 1 5A92AC17
 P 6200 4100
@@ -1104,8 +977,6 @@ F 3 "" H 7775 1585 50  0000 C CNN
 	1    7775 1585
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3250 5100
-NoConn ~ 3250 4400
 $Comp
 L CP2102N U2
 U 1 1 5A8B808C
@@ -1442,65 +1313,6 @@ Connection ~ 3500 6550
 Wire Wire Line
 	3700 6700 4350 6700
 Connection ~ 3700 6700
-Wire Wire Line
-	1100 5000 3250 5000
-Wire Wire Line
-	1100 4800 3250 4800
-Wire Wire Line
-	1100 4600 3250 4600
-Wire Wire Line
-	3250 4500 1100 4500
-Wire Wire Line
-	2500 4200 2500 4500
-Connection ~ 2500 4500
-Wire Wire Line
-	2350 4200 2350 4600
-Connection ~ 2350 4600
-Wire Wire Line
-	2200 4200 2200 4800
-Connection ~ 2200 4800
-Wire Wire Line
-	2050 4200 2050 5000
-Connection ~ 2050 5000
-Wire Wire Line
-	1250 4250 1550 4250
-Wire Wire Line
-	1550 4250 1550 4200
-Wire Wire Line
-	1250 4250 1250 4200
-Wire Wire Line
-	1400 4250 1400 4300
-Connection ~ 1400 4250
-Wire Wire Line
-	1250 4000 1250 3950
-Wire Wire Line
-	1250 3950 2650 3950
-Wire Wire Line
-	2500 3950 2500 4000
-Wire Wire Line
-	2350 4000 2350 3950
-Connection ~ 2350 3950
-Wire Wire Line
-	2200 4000 2200 3950
-Connection ~ 2200 3950
-Wire Wire Line
-	2050 4000 2050 3950
-Connection ~ 2050 3950
-Wire Wire Line
-	1550 4000 1550 3950
-Connection ~ 1550 3950
-Wire Wire Line
-	1900 3850 1900 3950
-Connection ~ 1900 3950
-Wire Wire Line
-	2650 3950 2650 4700
-Wire Wire Line
-	2650 4700 3250 4700
-Connection ~ 2500 3950
-Wire Wire Line
-	3050 5200 3050 4900
-Wire Wire Line
-	3050 4900 3250 4900
 Wire Wire Line
 	8750 4150 8750 4400
 Wire Wire Line
