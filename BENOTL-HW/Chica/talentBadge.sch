@@ -39,13 +39,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "The badge of the Lands"
-Date "2018-12-31"
-Rev "0.2"
+Date "2018-03-07"
+Rev "0.3"
 Comp "Unofficial Badge of Talent Land 2018"
 Comment1 "Andres Sabas"
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment2 "Eden Candelas"
+Comment3 "Eduardo Contreras"
+Comment4 "Gustavo Reynaga"
 $EndDescr
 $Comp
 L SW_Push SW1
@@ -284,6 +284,7 @@ F 0 "R2" V 10405 1625 50  0000 L CNN
 F 1 "470" V 10365 1475 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 10360 1550 50  0001 C CNN
 F 3 "" H 10360 1550 50  0000 C CNN
+F 4 "CR0805-FX-4700ELF" V 10360 1550 60  0001 C CNN "PartNo"
 	1    10360 1550
 	0    1    1    0   
 $EndComp
@@ -487,6 +488,7 @@ F 0 "R3" H 9335 1700 50  0000 L CNN
 F 1 "1k" H 9335 1800 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 9485 1750 50  0001 C CNN
 F 3 "" H 9485 1750 50  0000 C CNN
+F 4 "RC0805JR-071KL" H 9485 1750 60  0001 C CNN "PartNo"
 	1    9485 1750
 	-1   0    0    1   
 $EndComp

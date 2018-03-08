@@ -38,14 +38,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Talent Badge"
-Date "04/03/2018"
+Title "The badge of the Lands"
+Date "2018-03-07"
 Rev "0.3"
-Comp "Makers Mexico"
-Comment1 "Eduardo Contreras"
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comp "Unofficial Badge of Talent Land 2018"
+Comment1 "Andres Sabas"
+Comment2 "Eden Candelas"
+Comment3 "Eduardo Contreras"
+Comment4 "Gustavo Reynaga"
 $EndDescr
 $Comp
 L SW_Push SW1
@@ -105,17 +105,6 @@ F 3 "https://www.mouser.com/ds/2/445/629105150921-469278.pdf" V 7450 4900 50  00
 F 4 "629105150921" H 7500 5000 60  0001 C CNN "PartNo"
 	1    7500 5000
 	0    -1   1    0   
-$EndComp
-$Comp
-L esp8266-12 U1
-U 1 1 5A823B5C
-P 9000 2350
-F 0 "U1" H 8500 3350 60  0000 C CNN
-F 1 "esp8266-12" H 8250 2300 60  0000 C CNN
-F 2 "talentBadge:esp8266-12" H 8450 2500 60  0001 C CNN
-F 3 "" H 8450 2500 60  0000 C CNN
-	1    9000 2350
-	1    0    0    -1  
 $EndComp
 $Comp
 L ws2812b U5
@@ -200,7 +189,7 @@ U 1 1 5A883E94
 P 1150 6600
 F 0 "C3" H 1160 6670 50  0000 L CNN
 F 1 "4.7uF" H 1160 6520 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:Tantalum_Case-A_EIA-3216-18_Hand" H 1150 6600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1150 6600 50  0001 C CNN
 F 3 "https://www.mouser.com/ds/2/40/TPS_AUTO-845414.pdf" H 1150 6600 50  0001 C CNN
 F 4 "TPSA475K010T1400" H 1150 6600 60  0001 C CNN "PartNo"
 	1    1150 6600
@@ -228,7 +217,7 @@ F 3 "" H 2250 6200 50  0000 C CNN
 	1    2250 6200
 	1    0    0    -1  
 $EndComp
-Text GLabel 10350 2000 2    50   Input ~ 0
+Text GLabel 10560 1550 2    50   Output ~ 0
 np
 Text GLabel 2550 1200 2    50   Input ~ 0
 np
@@ -268,51 +257,52 @@ $EndComp
 $Comp
 L +3.3V #PWR010
 U 1 1 5A889CBB
-P 7700 1350
-F 0 "#PWR010" H 7700 1200 50  0001 C CNN
-F 1 "+3.3V" H 7700 1490 50  0000 C CNN
-F 2 "" H 7700 1350 50  0000 C CNN
-F 3 "" H 7700 1350 50  0000 C CNN
-	1    7700 1350
+P 7000 895
+F 0 "#PWR010" H 7000 745 50  0001 C CNN
+F 1 "+3.3V" H 7000 1035 50  0000 C CNN
+F 2 "" H 7000 895 50  0000 C CNN
+F 3 "" H 7000 895 50  0000 C CNN
+	1    7000 895 
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR011
 U 1 1 5A889D35
-P 10100 2500
-F 0 "#PWR011" H 10100 2250 50  0001 C CNN
-F 1 "GND" H 10100 2350 50  0000 C CNN
-F 2 "" H 10100 2500 50  0000 C CNN
-F 3 "" H 10100 2500 50  0000 C CNN
-	1    10100 2500
+P 9485 2050
+F 0 "#PWR011" H 9485 1800 50  0001 C CNN
+F 1 "GND" H 9485 1900 50  0000 C CNN
+F 2 "" H 9485 2050 50  0000 C CNN
+F 3 "" H 9485 2050 50  0000 C CNN
+	1    9485 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L R_Small R2
 U 1 1 5A88A940
-P 10100 2000
-F 0 "R2" V 10050 1800 50  0000 L CNN
-F 1 "470" V 10150 1750 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 10100 2000 50  0001 C CNN
-F 3 "" H 10100 2000 50  0000 C CNN
-	1    10100 2000
+P 10360 1550
+F 0 "R2" V 10405 1625 50  0000 L CNN
+F 1 "470" V 10365 1475 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 10360 1550 50  0001 C CNN
+F 3 "" H 10360 1550 50  0000 C CNN
+F 4 "CR0805-FX-4700ELF" V 10360 1550 60  0001 C CNN "PartNo"
+	1    10360 1550
 	0    1    1    0   
 $EndComp
 Text GLabel 10650 4900 2    50   Input ~ 0
 TXD
 Text GLabel 10650 5000 2    50   Output ~ 0
 RXD
-Text GLabel 10000 1500 2    50   Output ~ 0
+Text GLabel 9380 1050 2    50   Output ~ 0
 TXD
-Text GLabel 10000 1600 2    50   Input ~ 0
+Text GLabel 9380 1150 2    50   Input ~ 0
 RXD
 Text GLabel 4350 6550 2    50   Output ~ 0
 B1
 Text GLabel 4350 6700 2    50   Output ~ 0
 B2
-Text GLabel 10000 1700 2    50   Input ~ 0
+Text GLabel 9380 1250 2    50   Input ~ 0
 B1
-Text GLabel 10000 1800 2    50   Input ~ 0
+Text GLabel 9380 1350 2    50   Input ~ 0
 B2
 $Comp
 L sd_card_spi P5
@@ -344,9 +334,9 @@ U 1 1 5A89C377
 P 1250 4100
 F 0 "C5" H 1260 4170 50  0000 L CNN
 F 1 "4.7uF" H 1260 4020 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:Tantalum_Case-A_EIA-3216-18_Hand" H 1250 4100 50  0001 C CNN
-F 3 "https://www.mouser.com/ds/2/445/885012107013-553998.pdf" H 1250 4100 50  0001 C CNN
-F 4 "885012107013" H 1250 4100 60  0001 C CNN "PartNo"
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1250 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/40/TPS_AUTO-845414.pdf" H 1250 4100 50  0001 C CNN
+F 4 "TPSA475K010T1400 " H 1250 4100 60  0001 C CNN "PartNo"
 	1    1250 4100
 	1    0    0    -1  
 $EndComp
@@ -391,13 +381,15 @@ F 3 "" H 3050 5200 50  0000 C CNN
 	1    3050 5200
 	1    0    0    -1  
 $EndComp
-Text GLabel 8750 2700 3    50   Input ~ 0
+Text Notes 8140 7640 0    50   Italic 10
+Feb 16, 2018\n
+Text GLabel 8100 2250 3    50   Input ~ 0
 CS
-Text GLabel 9150 2700 3    50   Input ~ 0
+Text GLabel 8500 2250 3    50   Input ~ 0
 MOSI
-Text GLabel 9250 2700 3    50   Input ~ 0
+Text GLabel 8600 2250 3    50   Input ~ 0
 CLK
-Text GLabel 8850 2700 3    50   Output ~ 0
+Text GLabel 8200 2250 3    50   Output ~ 0
 MISO
 $Comp
 L +3.3V #PWR015
@@ -422,18 +414,6 @@ F 3 "" H 8600 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP2102N U2
-U 1 1 5A8B808C
-P 9950 5900
-F 0 "U2" H 9600 7650 60  0000 C CNN
-F 1 "CP2102N" H 10200 7650 60  0000 C CNN
-F 2 "talentBadge:QFN-24-5x5mm_Pitch0.50mm" H 9850 6300 60  0001 C CNN
-F 3 "https://www.mouser.com/ds/2/368/cp2102n-datasheet-1082647.pdf" H 9850 6300 60  0001 C CNN
-F 4 "CP2102N-A01-GQFN24" H 9950 5900 60  0001 C CNN "PartNo"
-	1    9950 5900
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR017
 U 1 1 5A8BA4F2
 P 9050 6200
@@ -446,7 +426,7 @@ F 3 "" H 9050 6200 50  0000 C CNN
 $EndComp
 Text GLabel 4350 6850 2    50   Output ~ 0
 RST
-Text GLabel 8100 1500 0    50   Input ~ 0
+Text GLabel 7400 1050 0    50   Input ~ 0
 RST
 $Comp
 L CONN_01X04 P2
@@ -473,12 +453,12 @@ $EndComp
 $Comp
 L +3.3V #PWR019
 U 1 1 5A8CF265
-P 4510 4320
-F 0 "#PWR019" H 4510 4170 50  0001 C CNN
-F 1 "+3.3V" H 4510 4460 50  0000 C CNN
-F 2 "" H 4510 4320 50  0000 C CNN
-F 3 "" H 4510 4320 50  0000 C CNN
-	1    4510 4320
+P 4535 4300
+F 0 "#PWR019" H 4535 4150 50  0001 C CNN
+F 1 "+3.3V" H 4535 4440 50  0000 C CNN
+F 2 "" H 4535 4300 50  0000 C CNN
+F 3 "" H 4535 4300 50  0000 C CNN
+	1    4535 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -496,23 +476,20 @@ Text GLabel 4550 4750 0    50   Input ~ 0
 SDA
 Text GLabel 4550 4650 0    50   Input ~ 0
 SCL
-NoConn ~ 10550 5550
-NoConn ~ 10550 5650
-NoConn ~ 10550 5450
-NoConn ~ 10550 5350
-Text GLabel 8100 2100 0    50   Output ~ 0
+Text GLabel 7390 1650 0    50   Output ~ 0
 SCL
-Text GLabel 8100 2000 0    50   Output ~ 0
+Text GLabel 7390 1550 0    50   Output ~ 0
 SDA
 $Comp
 L R_Small R3
 U 1 1 5A8E4EC2
-P 10100 2200
-F 0 "R3" H 9950 2150 50  0000 L CNN
-F 1 "1k" H 9950 2250 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 10100 2200 50  0001 C CNN
-F 3 "" H 10100 2200 50  0000 C CNN
-	1    10100 2200
+P 9485 1750
+F 0 "R3" H 9335 1700 50  0000 L CNN
+F 1 "1k" H 9335 1800 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9485 1750 50  0001 C CNN
+F 3 "" H 9485 1750 50  0000 C CNN
+F 4 "RC0805JR-071KL" H 9485 1750 60  0001 C CNN "PartNo"
+	1    9485 1750
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -535,7 +512,7 @@ Text GLabel 5200 7150 0    50   Input ~ 0
 RTS
 Text GLabel 5200 6500 0    50   Input ~ 0
 DTR
-Text GLabel 10000 1900 2    50   Input ~ 0
+Text GLabel 9380 1450 2    50   Input ~ 0
 GPIO0
 Text GLabel 5200 7500 0    50   Input ~ 0
 GPIO0
@@ -634,17 +611,6 @@ $EndComp
 Text GLabel 5650 4100 0    50   Input ~ 0
 IRL
 $Comp
-L GND #PWR021
-U 1 1 5A9146B5
-P 5700 5150
-F 0 "#PWR021" H 5700 4900 50  0001 C CNN
-F 1 "GND" H 5700 5000 50  0000 C CNN
-F 2 "" H 5700 5150 50  0000 C CNN
-F 3 "" H 5700 5150 50  0000 C CNN
-	1    5700 5150
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR022
 U 1 1 5A914774
 P 6200 5150
@@ -654,18 +620,6 @@ F 2 "" H 6200 5150 50  0000 C CNN
 F 3 "" H 6200 5150 50  0000 C CNN
 	1    6200 5150
 	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R9
-U 1 1 5A9157B9
-P 5700 4900
-F 0 "R9" H 5550 4900 50  0000 L CNN
-F 1 "100" H 5500 5000 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 5700 4900 50  0001 C CNN
-F 3 "https://www.mouser.com/ds/2/447/Yageo_08112016_RC0805-1211991.pdf" H 5700 4900 50  0001 C CNN
-F 4 "RC0805FR-07100RL" H 5700 4900 60  0001 C CNN "PartNo"
-	1    5700 4900
-	-1   0    0    1   
 $EndComp
 $Comp
 L +3.3V #PWR023
@@ -680,9 +634,9 @@ F 3 "" H 6200 3850 50  0000 C CNN
 $EndComp
 Text GLabel 6450 4250 2    50   Input ~ 0
 IRT
-Text GLabel 8100 1800 0    50   Output ~ 0
+Text GLabel 7390 1350 0    50   Output ~ 0
 IRL
-Text GLabel 8100 1900 0    50   Input ~ 0
+Text GLabel 7390 1450 0    50   Input ~ 0
 IRT
 Text Notes 5400 3700 0    50   ~ 0
 Puerto IR
@@ -812,7 +766,7 @@ U 1 1 5A9257A3
 P 5600 2900
 F 0 "U16" H 5400 3250 60  0000 C CNN
 F 1 "ws2812b" H 5550 2850 60  0000 C CNN
-F 2 "talentBadge:LED_WS2812B-cortado" H 5600 2850 60  0001 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 5600 2850 60  0001 C CNN
 F 3 "http://www.seeedstudio.com/document/pdf/WS2812B%20Datasheet.pdf" H 5600 2850 60  0001 C CNN
 F 4 "ws2812b" H 5600 2900 60  0001 C CNN "PartNo"
 	1    5600 2900
@@ -1013,13 +967,13 @@ $EndComp
 $Comp
 L R_Small R1
 U 1 1 5A92B353
-P 8000 1700
-F 0 "R1" H 7900 1600 50  0000 L CNN
-F 1 "10k" V 8000 1650 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 8000 1700 50  0001 C CNN
-F 3 "https://www.mouser.com/ds/2/447/Yageo_08112016_RC0805-1211991.pdf" H 8000 1700 50  0001 C CNN
-F 4 "RC0805FR-0710KL" H 8000 1700 60  0001 C CNN "PartNo"
-	1    8000 1700
+P 7290 1250
+F 0 "R1" H 7190 1150 50  0000 L CNN
+F 1 "10k" V 7290 1200 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7290 1250 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/447/Yageo_08112016_RC0805-1211991.pdf" H 7290 1250 50  0001 C CNN
+F 4 "RC0805FR-0710KL" H 7290 1250 60  0001 C CNN "PartNo"
+	1    7290 1250
 	0    1    1    0   
 $EndComp
 Text Notes 5400 5600 0    50   ~ 0
@@ -1126,7 +1080,7 @@ U 1 1 5A93D3CC
 P 2250 6600
 F 0 "C4" H 2260 6670 50  0000 L CNN
 F 1 "4.7uF" H 2260 6520 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:Tantalum_Case-A_EIA-3216-18_Hand" H 2250 6600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2250 6600 50  0001 C CNN
 F 3 "https://www.mouser.com/ds/2/40/TPS_AUTO-845414.pdf" H 2250 6600 50  0001 C CNN
 F 4 "TPSA475K010T1400" H 2250 6600 60  0001 C CNN "PartNo"
 	1    2250 6600
@@ -1148,6 +1102,91 @@ NoConn ~ 8300 5850
 NoConn ~ 5150 2800
 NoConn ~ 10920 7360
 NoConn ~ 2050 6930
+$Comp
+L R_Small R15
+U 1 1 5A8CEBE7
+P 10225 1120
+F 0 "R15" H 10255 1140 50  0000 L CNN
+F 1 "10K" H 10255 1080 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 10225 1120 50  0001 C CNN
+F 3 "" H 10225 1120 50  0000 C CNN
+	1    10225 1120
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR024
+U 1 1 5A8CED38
+P 10225 940
+F 0 "#PWR024" H 10225 790 50  0001 C CNN
+F 1 "+3.3V" H 10225 1080 50  0000 C CNN
+F 2 "" H 10225 940 50  0000 C CNN
+F 3 "" H 10225 940 50  0000 C CNN
+	1    10225 940 
+	1    0    0    -1  
+$EndComp
+Text Label 9145 1550 0    60   ~ 0
+GPIO2
+NoConn ~ 3250 5100
+NoConn ~ 3250 4400
+$Comp
+L esp8266-12 U1
+U 1 1 5A955667
+P 8350 1900
+F 0 "U1" H 7850 2900 60  0000 C CNN
+F 1 "esp8266-12" H 8900 1850 60  0000 C CNN
+F 2 "" H 7800 2050 60  0000 C CNN
+F 3 "" H 7800 2050 60  0000 C CNN
+	1    8350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP2102N U2
+U 1 1 5A8B808C
+P 9950 5900
+F 0 "U2" H 9600 7650 60  0000 C CNN
+F 1 "CP2102N" H 10200 7650 60  0000 C CNN
+F 2 "talentBadge:QFN-24-5x5mm_Pitch0.50mm" H 9850 6300 60  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/368/cp2102n-datasheet-1082647.pdf" H 9850 6300 60  0001 C CNN
+F 4 "CP2102N-A01-GQFN24" H 9950 5900 60  0001 C CNN "PartNo"
+	1    9950 5900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8300 2100
+NoConn ~ 8400 2100
+NoConn ~ 7600 1150
+NoConn ~ 9350 5200
+NoConn ~ 9350 5300
+NoConn ~ 9350 5450
+NoConn ~ 9350 5550
+NoConn ~ 10550 5650
+NoConn ~ 10550 5550
+NoConn ~ 10550 5450
+NoConn ~ 10550 5350
+NoConn ~ 10550 5200
+NoConn ~ 10550 4800
+$Comp
+L GND #PWR021
+U 1 1 5A9146B5
+P 5700 5150
+F 0 "#PWR021" H 5700 4900 50  0001 C CNN
+F 1 "GND" H 5700 5000 50  0000 C CNN
+F 2 "" H 5700 5150 50  0000 C CNN
+F 3 "" H 5700 5150 50  0000 C CNN
+	1    5700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R9
+U 1 1 5A9157B9
+P 5700 4900
+F 0 "R9" H 5550 4900 50  0000 L CNN
+F 1 "100" H 5500 5000 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5700 4900 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/447/Yageo_08112016_RC0805-1211991.pdf" H 5700 4900 50  0001 C CNN
+F 4 "RC0805FR-07100RL" H 5700 4900 60  0001 C CNN "PartNo"
+	1    5700 4900
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
 	3000 6550 2900 6550
 Wire Wire Line
@@ -1418,27 +1457,25 @@ Connection ~ 2250 6450
 Wire Wire Line
 	2550 1200 2450 1200
 Wire Wire Line
-	7700 1350 7700 2200
+	7000 895  7000 1750
 Wire Wire Line
-	7700 2200 8250 2200
-Wire Wire Line
-	10200 2000 10350 2000
+	9100 1550 10260 1550
 Wire Wire Line
 	10550 4900 10650 4900
 Wire Wire Line
 	10550 5000 10650 5000
 Wire Wire Line
-	10000 1600 9750 1600
+	9100 1150 9380 1150
 Wire Wire Line
-	9750 1500 10000 1500
+	9100 1050 9380 1050
 Connection ~ 3500 6550
 Wire Wire Line
 	3700 6700 4350 6700
 Connection ~ 3700 6700
 Wire Wire Line
-	10000 1700 9750 1700
+	9100 1250 9380 1250
 Wire Wire Line
-	10000 1800 9750 1800
+	9100 1350 9380 1350
 Wire Wire Line
 	1100 5000 3250 5000
 Wire Wire Line
@@ -1499,14 +1536,6 @@ Wire Wire Line
 Wire Wire Line
 	3050 4900 3250 4900
 Wire Wire Line
-	8750 2550 8750 2700
-Wire Wire Line
-	8850 2550 8850 2700
-Wire Wire Line
-	9150 2550 9150 2700
-Wire Wire Line
-	9250 2550 9250 2700
-Wire Wire Line
 	8750 4150 8750 4400
 Wire Wire Line
 	9350 4350 8750 4350
@@ -1552,7 +1581,7 @@ Wire Wire Line
 	7800 5350 7400 5350
 Connection ~ 7400 5350
 Wire Wire Line
-	9100 5850 9200 5850
+	9100 5850 9250 5850
 Wire Wire Line
 	3000 7350 2900 7350
 Connection ~ 2900 7350
@@ -1567,9 +1596,7 @@ Wire Wire Line
 	4350 6850 3900 6850
 Connection ~ 3900 6850
 Wire Wire Line
-	8100 1500 8250 1500
-Wire Wire Line
-	4510 4320 4510 4550
+	4535 4300 4535 4550
 Wire Wire Line
 	4650 4450 4650 4900
 Wire Wire Line
@@ -1577,23 +1604,16 @@ Wire Wire Line
 Wire Wire Line
 	4800 4750 4550 4750
 Wire Wire Line
-	9750 2000 10000 2000
+	9100 1750 9185 1750
 Wire Wire Line
-	7900 1700 7700 1700
-Connection ~ 7700 1700
+	9185 1750 9185 1950
 Wire Wire Line
-	8100 1700 8250 1700
+	9185 1950 9485 1950
 Wire Wire Line
-	9750 2200 9800 2200
+	9485 1850 9485 2050
+Connection ~ 9485 1950
 Wire Wire Line
-	9800 2200 9800 2400
-Wire Wire Line
-	9800 2400 10100 2400
-Wire Wire Line
-	10100 2300 10100 2500
-Connection ~ 10100 2400
-Wire Wire Line
-	9750 2100 10100 2100
+	9100 1650 9485 1650
 Wire Wire Line
 	10550 4700 10650 4700
 Wire Wire Line
@@ -1607,7 +1627,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 7150 5800 7150
 Wire Wire Line
-	9750 1900 10000 1900
+	9100 1450 9380 1450
 Wire Wire Line
 	5200 7500 6100 7500
 Wire Wire Line
@@ -1630,10 +1650,6 @@ Wire Wire Line
 	5200 6150 6100 6150
 Wire Wire Line
 	6100 6150 6100 6300
-Wire Wire Line
-	8100 2000 8250 2000
-Wire Wire Line
-	8250 2100 8100 2100
 Wire Notes Line
 	6900 500  6900 7750
 Wire Notes Line
@@ -1686,22 +1702,53 @@ Wire Wire Line
 Wire Wire Line
 	6200 4250 6450 4250
 Connection ~ 6200 4250
-Wire Wire Line
-	8100 1900 8250 1900
-Wire Wire Line
-	8100 1800 8250 1800
 Wire Notes Line
 	5300 3550 5300 5650
 Wire Wire Line
-	9200 5850 9200 4900
-Connection ~ 9200 4900
+	10225 940  10225 1020
 Wire Wire Line
-	9130 5000 9130 5750
+	10225 1220 10225 1550
 Wire Wire Line
-	9130 5750 9100 5750
-Connection ~ 9130 5000
+	9150 5000 9150 5750
 Wire Wire Line
-	4800 4450 4650 4450
+	9150 5750 9100 5750
+Connection ~ 9150 5000
 Wire Wire Line
-	4510 4550 4800 4550
+	9250 5850 9250 4900
+Connection ~ 9250 4900
+Wire Wire Line
+	7400 1050 7600 1050
+Wire Wire Line
+	8500 2100 8500 2250
+Wire Wire Line
+	8600 2100 8600 2250
+Wire Wire Line
+	8200 2100 8200 2250
+Wire Wire Line
+	8100 2100 8100 2250
+Wire Wire Line
+	7390 1250 7600 1250
+Wire Wire Line
+	7390 1350 7600 1350
+Wire Wire Line
+	7600 1450 7390 1450
+Wire Wire Line
+	7390 1550 7600 1550
+Wire Wire Line
+	7000 1750 7600 1750
+Wire Wire Line
+	7190 1250 7000 1250
+Connection ~ 7000 1250
+Wire Wire Line
+	7390 1650 7600 1650
+Wire Wire Line
+	4650 4450 4800 4450
+Wire Wire Line
+	4535 4550 4800 4550
+Connection ~ 10225 1550
+Wire Wire Line
+	10460 1550 10560 1550
+NoConn ~ 10550 4600
+NoConn ~ 10550 4450
+NoConn ~ 10550 4350
 $EndSCHEMATC
