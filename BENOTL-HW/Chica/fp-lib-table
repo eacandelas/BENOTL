@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name talentBadge)(type KiCad)(uri /home/eden/dev/hardware/BENOTL/BENOTL-HW/talentBadge.pretty)(options "")(descr ""))
+  (lib (name talentBadge)(type KiCad)(uri /Users/sabas/Documents/proyectoshd/BENOTL/BENOTL-HW/talentBadge.pretty)(options "")(descr ""))
 )
