@@ -32,173 +32,19 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:pdxlbs
+LIBS:ESP8266
 LIBS:pspice
 LIBS:Video
-LIBS:Valve
 LIBS:Triac_Thyristor
-LIBS:Transistor_IGBT
-LIBS:Transistor_FET
-LIBS:Transistor_BJT
-LIBS:Transistor_Array
-LIBS:Transformer
-LIBS:Timer_RTC
-LIBS:Timer_PLL
-LIBS:Timer
-LIBS:Switch
-LIBS:Sensor_Voltage
-LIBS:Sensor_Touch
-LIBS:Sensor_Temperature
-LIBS:Sensor_Proximity
-LIBS:Sensor_Pressure
-LIBS:Sensor_Optical
-LIBS:Sensor_Motion
-LIBS:Sensor_Magnetic
-LIBS:Sensor_Humidity
-LIBS:Sensor_Gas
-LIBS:Sensor_Current
-LIBS:Sensor_Audio
-LIBS:Sensor
-LIBS:Relay_SolidState
-LIBS:Relay
-LIBS:Regulator_Switching
-LIBS:Regulator_SwitchedCapacitor
-LIBS:Regulator_Linear
-LIBS:Regulator_Current
-LIBS:Regulator_Controller
-LIBS:Reference_Voltage
-LIBS:Reference_Current
-LIBS:RF_ZigBee
-LIBS:RF_WiFi
-LIBS:RF_Switch
-LIBS:RF_RFID
-LIBS:RF_Module
-LIBS:RF_Mixer
-LIBS:RF_GPS
-LIBS:RF_Bluetooth
-LIBS:RF_AM_FM
-LIBS:RF
-LIBS:Power_Supervisor
-LIBS:Power_Protection
 LIBS:Power_Management
-LIBS:Potentiometer_Digital
-LIBS:Oscillator
-LIBS:Motor
-LIBS:Memory_UniqueID
-LIBS:Memory_ROM
-LIBS:Memory_RAM
-LIBS:Memory_NVRAM
-LIBS:Memory_Flash
-LIBS:Memory_EPROM
-LIBS:Memory_EEPROM
-LIBS:Memory_Controller
 LIBS:Mechanical
-LIBS:MCU_Texas_MSP430
-LIBS:MCU_Texas
-LIBS:MCU_SiliconLabs
-LIBS:MCU_SiFive
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_Parallax
-LIBS:MCU_NXP_S08
-LIBS:MCU_NXP_MCore
-LIBS:MCU_NXP_MAC7100
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_HCS12
-LIBS:MCU_NXP_HC12
-LIBS:MCU_NXP_HC11
-LIBS:MCU_NXP_ColdFire
-LIBS:MCU_Module
-LIBS:MCU_Microchip_SAML
-LIBS:MCU_Microchip_SAME
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Intel
-LIBS:MCU_Infineon
-LIBS:MCU_Cypress
-LIBS:MCU_Atmel_AVR
-LIBS:MCU_Atmel_ATTINY
-LIBS:MCU_Atmel_ATMEGA
-LIBS:MCU_Atmel_8051
-LIBS:MCU_AnalogDevices
-LIBS:Logic_TTL_IEEE
 LIBS:Logic_Programmable
-LIBS:Logic_LevelTranslator
-LIBS:Logic_CMOS_IEEE
-LIBS:Logic_CMOS_4000
-LIBS:Logic_74xx
-LIBS:Logic_74xgxx
-LIBS:LED
-LIBS:Jumper
-LIBS:Isolator_Analog
-LIBS:Isolator
-LIBS:Interface_USB
-LIBS:Interface_UART
-LIBS:Interface_Telecom
-LIBS:Interface_Optical
-LIBS:Interface_LineDriver
-LIBS:Interface_HID
-LIBS:Interface_Expansion
-LIBS:Interface_Ethernet
-LIBS:Interface_CurrentLoop
-LIBS:Interface_CAN_LIN
 LIBS:Interface
 LIBS:Graphic
-LIBS:GPU
-LIBS:Filter
-LIBS:FPGA_Xilinx_Virtex7
-LIBS:FPGA_Xilinx_Virtex6
-LIBS:FPGA_Xilinx_Virtex5
-LIBS:FPGA_Xilinx_Spartan6
-LIBS:FPGA_Xilinx_Kintex7
-LIBS:FPGA_Xilinx_Artix7
-LIBS:FPGA_Xilinx
-LIBS:FPGA_Actel
-LIBS:Driver_Relay
-LIBS:Driver_Motor
-LIBS:Driver_LED
-LIBS:Driver_FET
-LIBS:Driver_Display
-LIBS:Display_Graphic
-LIBS:Display_Character
-LIBS:Diode_Laser
-LIBS:Diode_Bridge
 LIBS:Diode
 LIBS:Device
-LIBS:DSP_Texas
-LIBS:DSP_Motorola
-LIBS:DSP_Microchip_DSPIC33
-LIBS:DSP_Freescale
-LIBS:Converter_DCDC
-LIBS:Converter_ACDC
-LIBS:Connector_Specialized
-LIBS:Connector_Generic_Shielded
-LIBS:Connector_Generic
-LIBS:Comparator
-LIBS:CPU_PowerPC
-LIBS:CPU_NXP_68000
-LIBS:CPU_NXP_6800
-LIBS:CPU
-LIBS:CPLD_Xilinx
-LIBS:CPLD_Altera
 LIBS:Battery_Management
 LIBS:Audio
-LIBS:Analog_Switch
-LIBS:Analog_DAC
-LIBS:Analog_ADC
-LIBS:Analog
-LIBS:Amplifier_Video
-LIBS:Amplifier_Operational
-LIBS:Amplifier_Instrumentation
-LIBS:Amplifier_Difference
-LIBS:Amplifier_Current
-LIBS:Amplifier_Buffer
-LIBS:Amplifier_Audio
 LIBS:talentBadge-cache
 EELAYER 25 0
 EELAYER END
@@ -461,10 +307,10 @@ B1
 Text GLabel 10485 2535 2    50   Input ~ 0
 B2
 $Comp
-L +3.3V #PWR014
+L +3.3V #PWR011
 U 1 1 5A8ACE92
 P 8750 4150
-F 0 "#PWR014" H 8750 4000 50  0001 C CNN
+F 0 "#PWR011" H 8750 4000 50  0001 C CNN
 F 1 "+3.3V" H 8750 4290 50  0000 C CNN
 F 2 "" H 8750 4150 50  0000 C CNN
 F 3 "" H 8750 4150 50  0000 C CNN
@@ -472,10 +318,10 @@ F 3 "" H 8750 4150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L GND #PWR012
 U 1 1 5A8B6B0C
 P 8600 4600
-F 0 "#PWR015" H 8600 4350 50  0001 C CNN
+F 0 "#PWR012" H 8600 4350 50  0001 C CNN
 F 1 "GND" H 8450 4550 50  0000 C CNN
 F 2 "" H 8600 4600 50  0000 C CNN
 F 3 "" H 8600 4600 50  0000 C CNN
@@ -483,10 +329,10 @@ F 3 "" H 8600 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L GND #PWR013
 U 1 1 5A8BA4F2
 P 9050 6200
-F 0 "#PWR016" H 9050 5950 50  0001 C CNN
+F 0 "#PWR013" H 9050 5950 50  0001 C CNN
 F 1 "GND" H 9050 6050 50  0000 C CNN
 F 2 "" H 9050 6200 50  0000 C CNN
 F 3 "" H 9050 6200 50  0000 C CNN
@@ -509,10 +355,10 @@ F 3 "" H 5000 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR017
+L +3.3V #PWR014
 U 1 1 5A8CF103
 P 3700 6000
-F 0 "#PWR017" H 3700 5850 50  0001 C CNN
+F 0 "#PWR014" H 3700 5850 50  0001 C CNN
 F 1 "+3.3V" H 3700 6140 50  0000 C CNN
 F 2 "" H 3700 6000 50  0000 C CNN
 F 3 "" H 3700 6000 50  0000 C CNN
@@ -520,10 +366,10 @@ F 3 "" H 3700 6000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR018
+L +3.3V #PWR015
 U 1 1 5A8CF265
 P 4535 4300
-F 0 "#PWR018" H 4535 4150 50  0001 C CNN
+F 0 "#PWR015" H 4535 4150 50  0001 C CNN
 F 1 "+3.3V" H 4535 4440 50  0000 C CNN
 F 2 "" H 4535 4300 50  0000 C CNN
 F 3 "" H 4535 4300 50  0000 C CNN
@@ -531,10 +377,10 @@ F 3 "" H 4535 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L GND #PWR016
 U 1 1 5A8CFC33
 P 4650 4900
-F 0 "#PWR019" H 4650 4650 50  0001 C CNN
+F 0 "#PWR016" H 4650 4650 50  0001 C CNN
 F 1 "GND" H 4650 4750 50  0000 C CNN
 F 2 "" H 4650 4900 50  0000 C CNN
 F 3 "" H 4650 4900 50  0000 C CNN
@@ -619,7 +465,7 @@ U 1 1 5A8FEF52
 P 650 6350
 F 0 "P3" H 650 6500 50  0000 C CNN
 F 1 "Batt" V 750 6350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 650 6350 50  0001 C CNN
+F 2 "talentBadge:Keystone_2479_3xAAA" H 650 6350 50  0001 C CNN
 F 3 "" H 650 6350 50  0000 C CNN
 	1    650  6350
 	-1   0    0    1   
@@ -678,10 +524,10 @@ $EndComp
 Text GLabel 5650 4100 0    50   Input ~ 0
 IRL
 $Comp
-L GND #PWR020
+L GND #PWR017
 U 1 1 5A914774
 P 6200 5150
-F 0 "#PWR020" H 6200 4900 50  0001 C CNN
+F 0 "#PWR017" H 6200 4900 50  0001 C CNN
 F 1 "GND" H 6200 5000 50  0000 C CNN
 F 2 "" H 6200 5150 50  0000 C CNN
 F 3 "" H 6200 5150 50  0000 C CNN
@@ -689,10 +535,10 @@ F 3 "" H 6200 5150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR021
+L +3.3V #PWR018
 U 1 1 5A916FB2
 P 6200 3850
-F 0 "#PWR021" H 6200 3700 50  0001 C CNN
+F 0 "#PWR018" H 6200 3700 50  0001 C CNN
 F 1 "+3.3V" H 6200 3990 50  0000 C CNN
 F 2 "" H 6200 3850 50  0000 C CNN
 F 3 "" H 6200 3850 50  0000 C CNN
@@ -1133,10 +979,10 @@ F 3 "" H 7775 1765 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR022
+L +3.3V #PWR019
 U 1 1 5A8CED38
 P 7775 1585
-F 0 "#PWR022" H 7775 1435 50  0001 C CNN
+F 0 "#PWR019" H 7775 1435 50  0001 C CNN
 F 1 "+3.3V" H 7775 1725 50  0000 C CNN
 F 2 "" H 7775 1585 50  0000 C CNN
 F 3 "" H 7775 1585 50  0000 C CNN
@@ -1166,10 +1012,10 @@ NoConn ~ 10550 5350
 NoConn ~ 10550 5200
 NoConn ~ 10550 4800
 $Comp
-L GND #PWR023
+L GND #PWR020
 U 1 1 5A9146B5
 P 5700 5150
-F 0 "#PWR023" H 5700 4900 50  0001 C CNN
+F 0 "#PWR020" H 5700 4900 50  0001 C CNN
 F 1 "GND" H 5700 5000 50  0000 C CNN
 F 2 "" H 5700 5150 50  0000 C CNN
 F 3 "" H 5700 5150 50  0000 C CNN
@@ -1704,10 +1550,10 @@ Wire Wire Line
 	8030 1415 8025 1415
 Connection ~ 8030 1475
 $Comp
-L +3.3V #PWR024
+L +3.3V #PWR021
 U 1 1 5AA16781
 P 8025 1415
-F 0 "#PWR024" H 8025 1265 50  0001 C CNN
+F 0 "#PWR021" H 8025 1265 50  0001 C CNN
 F 1 "+3.3V" H 8025 1555 50  0000 C CNN
 F 2 "" H 8025 1415 50  0000 C CNN
 F 3 "" H 8025 1415 50  0000 C CNN
@@ -1715,10 +1561,10 @@ F 3 "" H 8025 1415 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR025
+L GND #PWR022
 U 1 1 5AA16E5F
 P 10830 2575
-F 0 "#PWR025" H 10830 2325 50  0001 C CNN
+F 0 "#PWR022" H 10830 2325 50  0001 C CNN
 F 1 "GND" H 10830 2425 50  0000 C CNN
 F 2 "" H 10830 2575 50  0000 C CNN
 F 3 "" H 10830 2575 50  0000 C CNN
@@ -1737,10 +1583,10 @@ Connection ~ 8100 2540
 Wire Wire Line
 	9315 2940 9315 3060
 $Comp
-L GND #PWR026
+L GND #PWR023
 U 1 1 5AA1CD61
 P 9315 3060
-F 0 "#PWR026" H 9315 2810 50  0001 C CNN
+F 0 "#PWR023" H 9315 2810 50  0001 C CNN
 F 1 "GND" H 9315 2910 50  0000 C CNN
 F 2 "" H 9315 3060 50  0000 C CNN
 F 3 "" H 9315 3060 50  0000 C CNN
