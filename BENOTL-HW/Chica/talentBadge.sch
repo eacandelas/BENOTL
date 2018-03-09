@@ -32,7 +32,173 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ESP8266
+LIBS:pdxlbs
+LIBS:pspice
+LIBS:Video
+LIBS:Valve
+LIBS:Triac_Thyristor
+LIBS:Transistor_IGBT
+LIBS:Transistor_FET
+LIBS:Transistor_BJT
+LIBS:Transistor_Array
+LIBS:Transformer
+LIBS:Timer_RTC
+LIBS:Timer_PLL
+LIBS:Timer
+LIBS:Switch
+LIBS:Sensor_Voltage
+LIBS:Sensor_Touch
+LIBS:Sensor_Temperature
+LIBS:Sensor_Proximity
+LIBS:Sensor_Pressure
+LIBS:Sensor_Optical
+LIBS:Sensor_Motion
+LIBS:Sensor_Magnetic
+LIBS:Sensor_Humidity
+LIBS:Sensor_Gas
+LIBS:Sensor_Current
+LIBS:Sensor_Audio
+LIBS:Sensor
+LIBS:Relay_SolidState
+LIBS:Relay
+LIBS:Regulator_Switching
+LIBS:Regulator_SwitchedCapacitor
+LIBS:Regulator_Linear
+LIBS:Regulator_Current
+LIBS:Regulator_Controller
+LIBS:Reference_Voltage
+LIBS:Reference_Current
+LIBS:RF_ZigBee
+LIBS:RF_WiFi
+LIBS:RF_Switch
+LIBS:RF_RFID
+LIBS:RF_Module
+LIBS:RF_Mixer
+LIBS:RF_GPS
+LIBS:RF_Bluetooth
+LIBS:RF_AM_FM
+LIBS:RF
+LIBS:Power_Supervisor
+LIBS:Power_Protection
+LIBS:Power_Management
+LIBS:Potentiometer_Digital
+LIBS:Oscillator
+LIBS:Motor
+LIBS:Memory_UniqueID
+LIBS:Memory_ROM
+LIBS:Memory_RAM
+LIBS:Memory_NVRAM
+LIBS:Memory_Flash
+LIBS:Memory_EPROM
+LIBS:Memory_EEPROM
+LIBS:Memory_Controller
+LIBS:Mechanical
+LIBS:MCU_Texas_MSP430
+LIBS:MCU_Texas
+LIBS:MCU_SiliconLabs
+LIBS:MCU_SiFive
+LIBS:MCU_ST_STM8
+LIBS:MCU_ST_STM32
+LIBS:MCU_Parallax
+LIBS:MCU_NXP_S08
+LIBS:MCU_NXP_MCore
+LIBS:MCU_NXP_MAC7100
+LIBS:MCU_NXP_LPC
+LIBS:MCU_NXP_Kinetis
+LIBS:MCU_NXP_HCS12
+LIBS:MCU_NXP_HC12
+LIBS:MCU_NXP_HC11
+LIBS:MCU_NXP_ColdFire
+LIBS:MCU_Module
+LIBS:MCU_Microchip_SAML
+LIBS:MCU_Microchip_SAME
+LIBS:MCU_Microchip_PIC32
+LIBS:MCU_Microchip_PIC24
+LIBS:MCU_Microchip_PIC18
+LIBS:MCU_Microchip_PIC16
+LIBS:MCU_Microchip_PIC12
+LIBS:MCU_Microchip_PIC10
+LIBS:MCU_Intel
+LIBS:MCU_Infineon
+LIBS:MCU_Cypress
+LIBS:MCU_Atmel_AVR
+LIBS:MCU_Atmel_ATTINY
+LIBS:MCU_Atmel_ATMEGA
+LIBS:MCU_Atmel_8051
+LIBS:MCU_AnalogDevices
+LIBS:Logic_TTL_IEEE
+LIBS:Logic_Programmable
+LIBS:Logic_LevelTranslator
+LIBS:Logic_CMOS_IEEE
+LIBS:Logic_CMOS_4000
+LIBS:Logic_74xx
+LIBS:Logic_74xgxx
+LIBS:LED
+LIBS:Jumper
+LIBS:Isolator_Analog
+LIBS:Isolator
+LIBS:Interface_USB
+LIBS:Interface_UART
+LIBS:Interface_Telecom
+LIBS:Interface_Optical
+LIBS:Interface_LineDriver
+LIBS:Interface_HID
+LIBS:Interface_Expansion
+LIBS:Interface_Ethernet
+LIBS:Interface_CurrentLoop
+LIBS:Interface_CAN_LIN
+LIBS:Interface
+LIBS:Graphic
+LIBS:GPU
+LIBS:Filter
+LIBS:FPGA_Xilinx_Virtex7
+LIBS:FPGA_Xilinx_Virtex6
+LIBS:FPGA_Xilinx_Virtex5
+LIBS:FPGA_Xilinx_Spartan6
+LIBS:FPGA_Xilinx_Kintex7
+LIBS:FPGA_Xilinx_Artix7
+LIBS:FPGA_Xilinx
+LIBS:FPGA_Actel
+LIBS:Driver_Relay
+LIBS:Driver_Motor
+LIBS:Driver_LED
+LIBS:Driver_FET
+LIBS:Driver_Display
+LIBS:Display_Graphic
+LIBS:Display_Character
+LIBS:Diode_Laser
+LIBS:Diode_Bridge
+LIBS:Diode
+LIBS:Device
+LIBS:DSP_Texas
+LIBS:DSP_Motorola
+LIBS:DSP_Microchip_DSPIC33
+LIBS:DSP_Freescale
+LIBS:Converter_DCDC
+LIBS:Converter_ACDC
+LIBS:Connector_Specialized
+LIBS:Connector_Generic_Shielded
+LIBS:Connector_Generic
+LIBS:Comparator
+LIBS:CPU_PowerPC
+LIBS:CPU_NXP_68000
+LIBS:CPU_NXP_6800
+LIBS:CPU
+LIBS:CPLD_Xilinx
+LIBS:CPLD_Altera
+LIBS:Battery_Management
+LIBS:Audio
+LIBS:Analog_Switch
+LIBS:Analog_DAC
+LIBS:Analog_ADC
+LIBS:Analog
+LIBS:Amplifier_Video
+LIBS:Amplifier_Operational
+LIBS:Amplifier_Instrumentation
+LIBS:Amplifier_Difference
+LIBS:Amplifier_Current
+LIBS:Amplifier_Buffer
+LIBS:Amplifier_Audio
 LIBS:talentBadge-cache
 EELAYER 25 0
 EELAYER END
@@ -190,7 +356,7 @@ U 1 1 5A883E94
 P 1150 6600
 F 0 "C3" H 1160 6670 50  0000 L CNN
 F 1 "4.7uF" H 1160 6520 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1150 6600 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand" H 1150 6600 50  0001 C CNN
 F 3 "https://www.mouser.com/ds/2/40/TPS_AUTO-845414.pdf" H 1150 6600 50  0001 C CNN
 F 4 "TPSA475K010T1400" H 1150 6600 60  0001 C CNN "PartNo"
 	1    1150 6600
@@ -933,7 +1099,7 @@ U 1 1 5A93D3CC
 P 2250 6600
 F 0 "C4" H 2260 6670 50  0000 L CNN
 F 1 "4.7uF" H 2260 6520 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2250 6600 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand" H 2250 6600 50  0001 C CNN
 F 3 "https://www.mouser.com/ds/2/40/TPS_AUTO-845414.pdf" H 2250 6600 50  0001 C CNN
 F 4 "TPSA475K010T1400" H 2250 6600 60  0001 C CNN "PartNo"
 	1    2250 6600
