@@ -32,7 +32,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ESP8266
 LIBS:talentBadge-cache
 EELAYER 25 0
 EELAYER END
@@ -1581,4 +1580,60 @@ F 3 "" H 9315 3060 50  0000 C CNN
 	1    9315 3060
 	1    0    0    -1  
 $EndComp
+Text GLabel 3080 4780 0    50   Output ~ 0
+SDA
+Text GLabel 3080 4660 0    50   Output ~ 0
+SCL
+$Comp
+L +3.3V #PWR?
+U 1 1 5AA6F882
+P 3350 4250
+F 0 "#PWR?" H 3350 4100 50  0001 C CNN
+F 1 "+3.3V" H 3350 4390 50  0000 C CNN
+F 2 "" H 3350 4250 50  0000 C CNN
+F 3 "" H 3350 4250 50  0000 C CNN
+	1    3350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R10
+U 1 1 5AA6FC7D
+P 3245 4485
+F 0 "R10" H 3275 4505 50  0000 L CNN
+F 1 "10K" H 3275 4445 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3245 4485 50  0001 C CNN
+F 3 "" H 3245 4485 50  0000 C CNN
+	1    3245 4485
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R10
+U 1 1 5AA700DD
+P 3465 4485
+F 0 "R10" H 3495 4505 50  0000 L CNN
+F 1 "10K" H 3495 4445 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3465 4485 50  0001 C CNN
+F 3 "" H 3465 4485 50  0000 C CNN
+	1    3465 4485
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3245 4385 3245 4330
+Wire Wire Line
+	3245 4330 3465 4330
+Wire Wire Line
+	3465 4330 3465 4385
+Wire Wire Line
+	3350 4250 3350 4330
+Wire Wire Line
+	3350 4330 3355 4330
+Connection ~ 3355 4330
+Wire Wire Line
+	3080 4780 3465 4780
+Wire Wire Line
+	3465 4780 3465 4585
+Wire Wire Line
+	3080 4660 3245 4660
+Wire Wire Line
+	3245 4660 3245 4585
 $EndSCHEMATC
