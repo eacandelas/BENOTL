@@ -3,9 +3,9 @@
   (general
     (links 157)
     (no_connects 0)
-    (area 58.94 22.24 175.040001 136.406725)
+    (area 114.164999 32.664999 128.315001 36.815001)
     (thickness 1.6)
-    (drawings 6)
+    (drawings 7)
     (tracks 749)
     (zones 0)
     (modules 66)
@@ -22,13 +22,13 @@
   )
 
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
-    (36 B.SilkS user hide)
+    (36 B.SilkS user)
     (37 F.SilkS user hide)
     (38 B.Mask user)
     (39 F.Mask user)
@@ -37,11 +37,11 @@
     (42 Eco1.User user)
     (43 Eco2.User user)
     (44 Edge.Cuts user)
-    (45 Margin user hide)
+    (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user hide)
-    (49 F.Fab user hide)
+    (48 B.Fab user)
+    (49 F.Fab user)
   )
 
   (setup
@@ -73,7 +73,7 @@
     (grid_origin 345.24 214.74)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x010ff_80000001)
+      (layerselection 0x03fff_80000001)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -2787,7 +2787,7 @@
   )
 
   (module talentBadge:pcbway_logo (layer B.Cu) (tedit 0) (tstamp 5AA6C00A)
-    (at 107.44 113.14 180)
+    (at 105.72 109.64 180)
     (fp_text reference G*** (at 0 0 180) (layer B.SilkS) hide
       (effects (font (thickness 0.3)) (justify mirror))
     )
@@ -3326,7 +3326,7 @@
   )
 
   (module talentBadge:wurth_logo (layer B.Cu) (tedit 0) (tstamp 5AB89298)
-    (at 132.44 114.34 180)
+    (at 132.8 110.33 180)
     (fp_text reference G*** (at 0 0 180) (layer B.SilkS) hide
       (effects (font (thickness 0.3)) (justify mirror))
     )
@@ -6453,6 +6453,9 @@
     )
   )
 
+  (gr_text "Hack me! in: \nhttps://goo.gl/GZqPbb" (at 122.69 119.41) (layer B.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_line (start 116.24 32.74) (end 126.24 32.74) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 116.24 36.74) (end 126.24 36.74) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 116.24 34.74) (end 116.24 36.74) (angle 180) (layer Edge.Cuts) (width 0.15))
