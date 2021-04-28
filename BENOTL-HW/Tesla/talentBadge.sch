@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "The badge of the Lands"
-Date "2018-03-07"
-Rev "0.4"
+Date "2021-04-27"
+Rev "1.0"
 Comp "Unofficial Badge of Talent Land 2018"
 Comment1 "Andres Sabas"
 Comment2 "Eden Candelas"
