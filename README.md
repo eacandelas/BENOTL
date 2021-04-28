@@ -1,4 +1,8 @@
 # The Badge of the Lands
+
+## NOTA: 
+Este proyecto ha dejado de recibir soporte, pero recuerde es un proyecto opensource puede tomarlo y modificarlo a su gusto, gracias por el apoyo para crear este proyecto aprendimos demasiado y ahora tenemos nuevos proyectos con badges, esperalos pronto
+
 Badge Electronico No Oficial para Talent Land México 2018.
 [Hackday project](https://hackaday.io/project/58276-the-badge-of-the-lands)
 
